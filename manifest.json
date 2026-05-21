@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Stylish Centered & Pinned FPS HUD",
+  "version": "1.0",
+  "description": "A high-performance cinematic and corner-pinned FPS counter.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
